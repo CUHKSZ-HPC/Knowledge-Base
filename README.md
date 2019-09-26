@@ -1,16 +1,14 @@
 # Knowledge-Base
 
----
-
 ### Common Knowledge
 
-#####Software 
+#### Software
 
 OS: LINUX（CentOS prefered，Ubuntu）
 
  Parallel environment:
 
-- MPI (essential, MPICH)
+- MPI (essential, MPICH) https://www.cnblogs.com/xbf9xbf/p/5140675.html
 
 - OpenMP(build with POSIX Thread)
 - POSIX Thread
@@ -54,7 +52,7 @@ Tools:
 
 Teamwork: Git/Github(fork workflow, pull request work flow)
 
-##### Hardware
+#### Hardware
 
 Computer architecture:
 
