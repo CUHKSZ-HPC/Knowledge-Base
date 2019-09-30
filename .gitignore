@@ -1,3 +1,9 @@
+# MacOS file system record
 .DS_Store
+
+# IDE config
 .idea
 .code
+
+# local build folder
+build/
