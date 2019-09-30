@@ -18,18 +18,6 @@
 
 typedef enum { DATA_TAG, TERM_TAG, RESULT_TAG} Tags;
 
-static int Rarray[25] = {51, 70, 84, 67, 77, 87, 79, 132, 108, 115,
-                    171, 203, 238, 249, 252, 253, 252, 250, 250, 255,
-                    240, 247, 252, 231, 213};
-
-static int Garray[25] = {13, 33, 64, 73, 102, 117, 151, 185, 198, 225,
-                    247, 251, 253, 250, 242, 227, 200, 166, 146, 121,
-                    93, 79, 38, 0, 6};
-
-static int Barray[25] = {128, 146, 182, 201, 210, 213, 225, 251, 236, 231,
-                    235, 218, 202, 213, 172, 125, 101, 68, 0, 26,
-                    4, 20, 3, 0, 55};
-
 double ComputeTemp(double ** tmpMap, double ** localMap, int row, int roomSize)
 {
     int j;
