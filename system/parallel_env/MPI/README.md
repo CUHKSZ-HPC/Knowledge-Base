@@ -8,6 +8,14 @@ The first question is what is MPI and what's the use of it? MPI is a standard fo
 
 Knowing that MPI is a standard, a protocal, then there's many ways to implement it. The most widly used releases are **MPICH, Open-MPI, Intel-MPI, MVAPICH**. The difference among the implementations are huge. Some of them are highly encapsulated and some of them are more open; some of them supports InfiniBand while some of then does not. The difference would be discussed in the later update. 
 
+[Official Doc for MPICH](https://www.mpich.org/documentation/guides/)
+
+[Official Doc for Open-MPI](https://www.open-mpi.org/doc/)
+
+[Official Doc for Intel-MPI](https://software.intel.com/en-us/mpi-library/documentation/get-started)
+
+[Official Doc for MVAPICH](http://mvapich.cse.ohio-state.edu/userguide/)
+
 ---
 
 ### File Structure
@@ -28,13 +36,13 @@ If you are new to HPC and new to MPI, PLEASE CHECK the tutorial first as a start
 
 For personal practice, the MPI release is up to your choice, but generally **MPICH** and **Open-MPI** are recommended because of the popularity and simplicity. 
 
-If you are a Mac user, `brew` is not recommended due to some strange config error(but you can try it though). Instead, try to follow 
+If you are a Mac user, `brew` is not recommended due to some strange config error(you can try it though). Instead, try to follow 
 
 [OpenMPI for MacOS](https://stackoverflow.com/questions/42703861/how-to-use-mpi-on-mac-os-x)
 
 [MPICH for MacOS](https://scorec.rpi.edu/~littld/osx_mpich_1.2.6.html)
 
-If you are a Windows user, try to use **MS-MPI** or **Intel-MPI** since you can't use **MPICH** or **Open-MPI**(you can challange youself though)
+If you are a Windows user, try to use **MS-MPI** or **Intel-MPI** since **MPICH** or **Open-MPI** is not supported by Windows (you can challange youself though)
 
 [MS-MPI for Win10](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi)
 
