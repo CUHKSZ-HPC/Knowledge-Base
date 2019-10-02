@@ -4,7 +4,7 @@
 
 ### Overview
 
-The first question is what is MPI and what's the use of it? MPI is a standard for process communication. Generally the parallel processs would not share memory with each other. Hence, to enable communication for programs running on non-shared storage distributed system, the MPI standard is needed. 
+The first question is what is MPI and what's the use of it? MPI is a standard for process communication. Generally the parallel processs would not share memory with each other. Hence, to enable communication for programs running on non-shared storage distributed system, the MPI standard is needed. One thing need to notice here is that MPI is using **data parallelization**, which means the same code would be executated in on the same process. This crucial when designing parallel program. 
 
 Knowing that MPI is a standard, a protocal, then there's many ways to implement it. The most widly used releases are **MPICH, Open-MPI, Intel-MPI, MVAPICH**. The difference among the implementations are huge. Some of them are highly encapsulated and some of them are more open; some of them supports InfiniBand while some of then does not. The difference would be discussed in the later update. 
 
@@ -24,7 +24,7 @@ Knowing that MPI is a standard, a protocal, then there's many ways to implement 
 |-README.md  // This is what you are looking at
 |-tutorial  // This is for beginners to practice
 	+-README.md
-	+-hello_mpi.cc
+	+-hello_mpi.c
 |-example_code  // The excellent code for example use
 ```
 
