@@ -38,7 +38,7 @@ The first step to building an MPI program is including the MPI header files with
 
 ```C
 MPI_Init(int* argc,
-    		 char*** argv)
+         char*** argv)
 ```
 
 During `MPI_Init`, all of MPI’s global and internal variables are constructed. Currently, `MPI_Init`takes two arguments that are not necessary, and the extra parameters are simply left as extra space in case future implementations might need them. The `MPI_Finalize` and `MPI_Init` should come in pairs.  
@@ -53,19 +53,19 @@ Generally, almost every MPI program needs to know the registered process size an
 
 ```C
 MPI_Comm_size(MPI_Comm communicator,
-      				int* size)
+              int* size)
 ```
 
 ```C
 MPI_Comm_rank(MPI_Comm communicator,
-    					int* rank)
+              int* rank)
 ```
 
 In addition, there's a function `MPI_Get_processor_name` to get the actual name of the processor on which the process is executing. On MacOS Mojave, the name is the host name. 
 
 ```C
 MPI_Get_processor_name(char* name,
-    									 int* name_length)
+                       int* name_length)
 ```
 
 
@@ -244,4 +244,12 @@ MPI_Allgather(
     MPI_Datatype recv_datatype,
     MPI_Comm communicator)
 ```
+
+
+
+---
+
+### Reference
+
+https://mpitutorial.com/tutorials/
 
