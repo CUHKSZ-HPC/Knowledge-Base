@@ -51,8 +51,6 @@ SSE
 
 [Make tutorial](https://www.tutorialspoint.com/makefile/index.htm)
 
-[GNU Make tutorial](https://www.gnu.org/software/make/manual/make.html)
-
 [SSE tutorial 1](https://felix.abecassis.me/2011/09/cpp-getting-started-with-sse/)
 
 [SSE tutorial 2](http://supercomputingblog.com/optimization/getting-started-with-sse-programming/)
@@ -68,6 +66,8 @@ SSE
 [cplusplus.com](http://www.cplusplus.com/)
 
 [GCC online doc](https://gcc.gnu.org/onlinedocs/)
+
+[GNU Make doc](https://www.gnu.org/software/make/manual/make.html)
 
 [SSE doc collection](https://stackoverflow.com/questions/13577226/intel-sse-and-avx-examples-and-tutorials)
 
