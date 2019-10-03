@@ -1,6 +1,6 @@
-##Shell Basic
+## Shell Basic
 
-Shell is a scripting language basicly used for communicating with operating system. It is always used to avoid duplicated work. For shell in linex, you need to be familiar with the commands in the linux system. But there are some differences between shell and other language.
+Shell is a scripting language basicly used for communicating with operating system. It is always used to avoid duplicated work. For shell in linux, you need to be familiar with the commands in the linux system. But there are some differences between shell and other language.
 
 ---
 
