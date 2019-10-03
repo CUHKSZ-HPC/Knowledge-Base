@@ -54,7 +54,7 @@ If Else
         
     
     
-For loop
+For Loop
 
     Passing variable: 
         for file in $(ls)
@@ -67,4 +67,4 @@ For loop
 	            echo $i # print all variable form 1 to 100
             done
     
-    
+While Loop
