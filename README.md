@@ -1,5 +1,9 @@
 # Knowledge-Base
 
+This is for the common knowledge base everyone need to know, detailed requirements are listed below. Note that for actual competition env, we should use Linux as the hosting OS(no exceptions). Hence, if you could practise all the things on a Linux, that's the best.
+
+---
+
 ### Common Knowledge
 
 #### Software
@@ -8,7 +12,7 @@ OS: LINUX（CentOS prefered，Ubuntu）
 
  Parallel environment:
 
-- MPI (essential, MPICH) https://www.cnblogs.com/xbf9xbf/p/5140675.html
+- MPI (essential, MPICH)
 
 - OpenMP(build with POSIX Thread)
 - POSIX Thread
