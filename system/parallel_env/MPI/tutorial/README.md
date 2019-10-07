@@ -1,5 +1,17 @@
 # Simple MPI tutorial
 
+### Reference:
+
+https://mpitutorial.com/tutorials/
+
+https://blog.csdn.net/u014768676/article/details/45380795
+
+https://www.mpich.org/static/docs/v3.1/
+
+https://cloud.tencent.com/developer/ask/94180
+
+
+
 ### Setup
 
 Open your terminal and cd to this dir. Then create a dir `build` for local compiled executable. 
@@ -244,14 +256,4 @@ MPI_Allgather(
     MPI_Datatype recv_datatype,
     MPI_Comm communicator)
 ```
-
-
-
----
-
-### Reference
-
-https://mpitutorial.com/tutorials/
-
-https://www.mpich.org/static/docs/v3.1/
 
