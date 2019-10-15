@@ -1,8 +1,11 @@
 # A simple Installation guidance for HPL(High Performance Linpack)
 
 ### Installation Environment:
-
-    Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, virtualbox
+    Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, VirtualBox
+    
+### Related Website:
+    Reference: https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/
+    HPL Release: https://www.netlib.org/benchmark/hpl/
 
 ### 0. Install dependency
     sudo apt-get install -y libatlas-base-dev libmpich-dev gfortran
