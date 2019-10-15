@@ -1,9 +1,10 @@
 # A simple Installation guidance for HPL(High Performance Linpack)
 
 ### Related Website:
-* [Installation Reference -> HPL (High Performance Linpack): Benchmarking Raspberry PIs](https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/)
-* [HPL Release -> HPL - A Portable Implementation of the High-Performance Linpack Benchmark for Distributed-Memory Computers](https://www.netlib.org/benchmark/hpl/)
-
+* [Installation Reference](https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/)
+* [HPL Release](https://www.netlib.org/benchmark/hpl/)
+* [HPL Parameter Basic Idea](http://www.crc.nd.edu/~rich/CRC_Summer_Scholars_2014/HPL-HowTo.pdf)
+* [HPL.dat Generation Tool](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/)
 
 ### Installation Environment:
     Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, VirtualBox
@@ -133,3 +134,7 @@
 
 	End of Tests.
 	================================================================================
+	
+##### Execute HPL program on multiple node
+    # change the value of Ps and Qs likes Ps=2, Qs=4
+    mpiexec -n 8 ./xhpl
