@@ -1,10 +1,12 @@
 # A simple Installation guidance for HPL(High Performance Linpack)
 
 ### Related Website:
-* [Installation Reference](https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/)
-* [HPL Release](https://www.netlib.org/benchmark/hpl/)
-* [HPL Parameter Basic Idea](http://www.crc.nd.edu/~rich/CRC_Summer_Scholars_2014/HPL-HowTo.pdf)
-* [HPL.dat Generation Tool](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/)
+* [HPL Installation Reference](https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/)
+* [HPL Official Release](https://www.netlib.org/benchmark/hpl/)
+* [HPL Tuning Basic Idea](http://www.crc.nd.edu/~rich/CRC_Summer_Scholars_2014/HPL-HowTo.pdf)
+* [HPL Official Tuning Doc](http://www.netlib.org/benchmark/hpl/tuning.html)
+* [HPL Tuning Tool](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/)
+* [HPL Official Q&A](https://www.netlib.org/benchmark/hpl/faqs.html)
 
 ### Installation Environment:
     Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, VirtualBox
