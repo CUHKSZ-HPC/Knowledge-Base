@@ -1,39 +1,36 @@
-#!/bin/bash
-echo "Please run this scipt steps by steps manually"
-exit 1
+# A simple Installation guidance for HPL(High Performance Linpack)
 
-# Environment:
-#	Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, virtualbox
+### Installation Environment:
 
-# 0. Install dependency
-sudo apt-get install -y libatlas-base-dev libmpich-dev gfortran
+    Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, virtualbox
 
-# 1. Download hpl
-cd ~
-wget https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz
-mv hpl-2.3 hpl
+### 0. Install dependency
+    sudo apt-get install -y libatlas-base-dev libmpich-dev gfortran
 
-# 2. Generate hpl template config file
-cd hpl/setup
-sh make_generic
-cp Make.UNKNOWN ../Make.linux
-cd ../
+### 1. Download hpl
+    cd ~
+    wget https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz
+    mv hpl-2.3 hpl
 
-# 3. Modify the config file according to the text below
-ARCH         = linux
-MPinc        = /usr/include/mpich/
-	# dpkg --listfiles libmpich-dev | grep 'mpi\.h'
-MPlib        = /usr/lib/x86_64-linux-gnu/libmpich.so
-	# dpkg --listfiles libmpich-dev | grep 'libmpich.so'
-LAinc        = /usr/include/x86_64-linux-gnu/atlas
-	# dpkg --listfiles libatlas-base-dev | grep 'atlas_buildinfo\.h'
+### 2. Generate hpl template conffile
+    cd hpl/setup
+    sh make_generic
+    cp Make.UNKNOWN ../Make.linux
+    cd ../
 
-# 4. Compile hpl
-make arch=linux -j $(nproc)
+### 3. Modify Make.linux according to the text below
+    ARCH         = linux
+    MPinc        = /usr/include/mpich/                      # dpkg --listfiles libmpich-dev | grep 'mpi\.h'
+    MPlib        = /usr/lib/x86_64-linux-gnu/libmpich.so    # dpkg --listfiles libmpich-dev | grep 'libmpich.so'
+    LAinc        = /usr/include/x86_64-linux-gnu/atlas      # dpkg --listfiles libatlas-base-dev | grep 'atlas_buildinfo\.h'
 
-# 5. Modify HPL.dat and run the hpl
-cd bin/linux
-# Replace HPL.dat by the text below:
+### 4. Compile HPL
+    make arch=linux -j $(nproc)
+
+### 5. Modify HPL.dat and run the hpl
+    cd bin/linux
+
+##### Replace HPL.dat by the text below:
 	HPLinpack benchmark input file
 	Innovative Computing Laboratory, University of Tennessee
 	HPL.out      output file name (if any)
@@ -65,8 +62,10 @@ cd bin/linux
 	0            U  in (0=transposed,1=no-transposed) form
 	1            Equilibration (0=no,1=yes)
 	8            memory alignment in double (> 0)
-./xhpl
-# The output will be something like:
+##### Execute HPL program
+    ./xhpl
+
+##### The output will be something like:
 	================================================================================
 	HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
 	Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
