@@ -9,7 +9,7 @@
     Ubuntu 18.04.2 LTS, 4.18.0-15-generic, x86_64, VirtualBox
 
 ### 0. Install dependency
-    sudo apt-get install -y libatlas-base-dev libmpich-dev gfortran
+    sudo apt-get install -y libatlas-base-dev mpich libmpich-dev gfortran
 
 ### 1. Download HPL
     cd ~
