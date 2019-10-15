@@ -10,12 +10,12 @@
 ### 0. Install dependency
     sudo apt-get install -y libatlas-base-dev libmpich-dev gfortran
 
-### 1. Download hpl
+### 1. Download HPL
     cd ~
     wget https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz
     mv hpl-2.3 hpl
 
-### 2. Generate hpl template conffile
+### 2. Generate HPL template conffile
     cd hpl/setup
     sh make_generic
     cp Make.UNKNOWN ../Make.linux
@@ -30,7 +30,7 @@
 ### 4. Compile HPL
     make arch=linux -j $(nproc)
 
-### 5. Modify HPL.dat and run the hpl
+### 5. Modify HPL.dat and run the HPL
     cd bin/linux
 
 ##### Replace HPL.dat by the text below:
