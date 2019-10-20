@@ -10,7 +10,14 @@
 ---
 
 * ar - create, modify, and extract from archives
+
+    * `ar rcs ARCHIVE [MEMBER...]`\
+    Create `ARCHIVE` from `MEMBER`s
 * ln - make links between files
+
+    * `ln -sf TARGET LINK_NAME`\
+    Create `LINK_NAME` linking to `TARGET`\
+    If `TARGET` is a relative path, then it is interpreted relative to `LINK_NAME`
 
 ---
 
@@ -29,6 +36,16 @@
 * .out - ELF Shared Object, dynamically linked (Dynamic Library, Executable)
 * .out - ELF Shared Object, statically linked (Dynamic Library, Executable)
 
+### Comilation Related Directory
+#### Compiler Path
+* /usr/lib/gcc/x86_64-linux-gnu/`$(gcc --version)`/
+#### Library Path
+* /usr/lib/x86_64-linux-gnu/
+#### Include Path
+* /usr/include
+* /usr/lib/gcc/x86_64-linux-gnu/7/include
+* `$(pwd)`
+
 ### GCC Compilation Process
 ![graph](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/images/GCC_CompilationProcess.png)
 * Preprocessing(cpp):  `-E`
@@ -36,6 +53,13 @@
 * Assemble(as):        `-c`
 * Linking(ld):         `(default)`
 * Save All Temps File: `-save-temps`
+
+### GCC Info Arguments
+* Display Invoked Program: `-v`
+    * cpp -v /dev/null -o /dev/null 2>&1
+* Display search path: `-print-search-dirs`
+* Display path to library: `-print-file-name=<lib>`
+    * gcc -print-file-name=libpthread.so
 
 ### GCC Basic Arguments
 * Output File Name:  `-o <file>`
@@ -46,7 +70,6 @@
 
 ### GCC Advanced Arguments
 * Include Warning:          `-Wall`
-* Display Invoked Program:  `-v`
 * Pass arg to Preprocessor: `-Wp,<options>`
 * Pass arg to Assembler:    `-Wa,<options>`
 * Pass arg to Linker:       `-Wl,<options>`

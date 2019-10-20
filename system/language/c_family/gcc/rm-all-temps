@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -n "$1" ]; then
+	find $1 \( \
+		-name "*.i" -o \
+		-name "*.s" -o \
+		-name "*.o" -o \
+		-name "*.a" -o \
+		-name "*.out" -o \
+		-name "*.so" -o \
+		-name "*.so.*" \) -delete -print
+else
+	echo "./levi-rm-all-temps PATH"
+	echo "This will recurrsively rm all compilation related temps files under PATH"
+fi
