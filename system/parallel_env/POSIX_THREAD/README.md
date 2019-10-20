@@ -1,4 +1,4 @@
-###Posix Threads Programming
+### Posix Threads Programming
    
 To do the posix threads programming, you need to first understand a life cycle of a thread.
 
