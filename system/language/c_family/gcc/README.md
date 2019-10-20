@@ -1,13 +1,18 @@
 # A GCC Arguments Cheat Sheet
 
 ### Compilation Related Tool
+
 * cpp - The C Preprocessor
 * gcc - GNU project C and C++ compiler
 * as - The portable GNU assembler
 * ld - The GNU linker
 
+---
+
 * ar - create, modify, and extract from archives
 * ln - make links between files
+
+---
 
 * readelf - Displays information about ELF files
 * ldd - Print shared object dependencies
@@ -25,7 +30,7 @@
 * .out - ELF Shared Object, statically linked (Dynamic Library, Executable)
 
 ### GCC Compilation Process
-* [graph](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/images/GCC_CompilationProcess.png)
+![graph](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/images/GCC_CompilationProcess.png)
 * Preprocessing(cpp):  `-E`
 * Compilationz(gcc):   `-S`
 * Assemble(as):        `-c`
