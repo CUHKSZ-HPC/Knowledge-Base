@@ -287,13 +287,31 @@ Time(%)      Time     Calls       Avg       Min       Max  Name
 
 ### Useful Materials
 
-Get CUDA installed on Ubuntu 18.04: https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/
+Get CUDA installed on Ubuntu 18.04
 
-Modern GPU architecture: http://download.nvidia.com/developer/cuda/seminar/TDCI_Arch.pdf
+- https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/
 
-Exploring the GPU architecture: https://nielshagoort.com/2019/03/12/exploring-the-gpu-architecture/
+Modern GPU architecture
 
-CUDA memory model: https://fenix.tecnico.ulisboa.pt/downloadFile/563568428758049/CUDA_3.pdf
+- http://download.nvidia.com/developer/cuda/seminar/TDCI_Arch.pdf
 
-CUDA tutorial: https://cuda-tutorial.readthedocs.io/en/latest/tutorials/tutorial01/
+Exploring the GPU architecture
 
+- https://nielshagoort.com/2019/03/12/exploring-the-gpu-architecture/
+
+CUDA memory model
+
+- https://fenix.tecnico.ulisboa.pt/downloadFile/563568428758049/CUDA_3.pdf
+
+CUDA tutorial
+
+- https://cuda-tutorial.readthedocs.io/en/latest/tutorials/tutorial01/
+
+CUDA toolkit document :
+
+- https://docs.nvidia.com/cuda/archive/9.2/ (Refer to the version fits to your environment)
+
+ CUDA programming introduction
+
+- https://www.nvidia.com/content/cudazone/download/Getting_Started_w_CUDA_Training_NVISION08.pdf
+- https://docs.nvidia.com/cuda/archive/9.2/cuda-c-programming-guide/index.html (Refer to the version of CUDA you installed.)
