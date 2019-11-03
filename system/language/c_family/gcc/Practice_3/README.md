@@ -12,4 +12,8 @@ ln -sf libfoo.so.2 lib/libfoo.so		# Create soft link libfoo.so to libfoo.so.2
 ./a.out
 ```
 
-
+* `gcc src/foo.1.c -I inc -shared -fPIC -o lib/libfoo.so.1`\
+	is equivalent to\
+	`gcc src/foo.1.c -I inc -fPIC -c` 
+	+\
+	`gcc foo.1.o -shared -o lib/libfoo.so.1`

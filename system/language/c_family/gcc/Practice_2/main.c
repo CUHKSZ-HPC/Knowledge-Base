@@ -1,6 +1,8 @@
-#include "foo.h"
+#include "foo1.h"
+#include "foo2.h"
 
 int main(){
-	printf_hw();
+	printf_hw1();
+	printf_hw2();
 }
 

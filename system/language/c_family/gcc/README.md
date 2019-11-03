@@ -33,10 +33,20 @@
 * .s - Assembler Source Code
 * .o - ELF relocatable
 * .a - ar Archive (Static Library)
-* .out - ELF Shared Object, dynamically linked (Dynamic Library, Executable)
-* .out - ELF Shared Object, statically linked (Dynamic Library, Executable)
+* .so - ELF Shared Object, dynamically linked (Shared Library)
+* .out - ELF Shared Object, dynamically linked (Executable)
+* .out - ELF Shared Object, statically linked (Executable)
 
-### Comilation Related Directory
+|                | statically linked | dynamically linked |
+| ---------------| :---------------: | :----------------: |
+| static library | √                 | ×                  |
+| shared library | √(partial)        | √                  |
+
+> You can't statically link shared library or dynamically link static
+
+> Flag `-static` will force linker to use static library (.a) instead of shared (.so) But. Static libraries not always installed by default. So if you need static link you have to install static libraries.
+
+### Compilation Related Directory
 #### Compiler Path
 * /usr/lib/gcc/x86_64-linux-gnu/`$(gcc --version)`/
 #### Library Path
@@ -60,22 +70,30 @@
 * Display search path: `-print-search-dirs`
 * Display path to library: `-print-file-name=<lib>`
     * gcc -print-file-name=libpthread.so
+* Print the ld input files: `-Wl,--trace`
 
 ### GCC Basic Arguments
 * Output File Name:  `-o <file>`
-* Header Directory:  `-I src`
-* Library Directory: `-L lib`
-* Linking Library:   `-l foo`
+* Header Directory:  `-I <dir>`
+* Library Directory: `-L <dir>`
+* Linking Library:   `-l<lib>`
+    * `-lfoo` is equivalent to `-l:libfoo.so` or `-l:libfoo.a`
+    * __link order matters__
 * Create Static Library: `ar rcs libfoo.a foo.o`
 
 ### GCC Advanced Arguments
-* Include Warning:          `-Wall`
+* Enable all Warning msg:    `-Wall`
 * Pass arg to Preprocessor: `-Wp,<options>`
 * Pass arg to Assembler:    `-Wa,<options>`
 * Pass arg to Linker:       `-Wl,<options>`
+* Generate more debugging info for gdb: `-g`
+* Set Optimization Level:   `-O<level>`
+* Define a macro: `-D <name>`
+    * or `-D <name>=<value>`
 
 ### GCC Dynamic Linking
 * All Library Static Linking: `-static`
-* Create Shared Object: `-shared`
 * Create Position Independent Code: `-fPIC`
-* Set Runtime Shared Library Search Path: `-Wl,-rpath <Path>` 
+* Create Shared Object: `-shared`
+* Set Runtime Shared Library Search Path: `-Wl,-rpath <Path>`
+    [About Static and Shared Libraries: 1.8](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html)
